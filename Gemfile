@@ -1,5 +1,7 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "webrick", "~> 1.7"
-gem "jekyll", "~> 4.3"
-gem "jekyll-environment-variables"
+source "https://rubygems.org"
+gemspec
+
+gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
+gem "kramdown-parser-gfm" if ENV["JEKYLL_VERSION"] == "~> 3.9"
