@@ -35,6 +35,11 @@ defaults:
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
+<<<<<<< HEAD
+=======
+# Build settings
+theme: jekyll-theme-minima
+>>>>>>> df9e9c9c0daaebfcf9f5c5a1d40768967cd8c348
 plugins:
   - jekyll-environment-variables
 
